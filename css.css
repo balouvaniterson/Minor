@@ -6,10 +6,349 @@ html,body{
 	margin: 0;
 	padding: 0;
 	background-color: #000;
-	height: 100%;
-
+  height: 100%;
 }
 
 *,html,body{
 	box-sizing: border-box;
+}
+
+.cls-1 {
+  fill: #a2312a;
+  }
+
+  .cls-2, .cls-7 {
+	fill: #fafdec;
+  }
+
+  .cls-2 {
+	opacity: 0.6;
+  }
+
+  .cls-3 {
+	fill: #e3ce74;
+  }
+
+  .cls-4 {
+	fill: #adbddc;
+  }
+
+  .cls-5 {
+  fill: #fff;
+  }
+  
+  .cls-6 {
+	fill: #fff5eb;
+  }
+
+  .rli {
+    fill: #fff5eb;
+    }
+
+ .lli {
+   fill: #fff5eb;
+ }
+
+
+.D1 {
+    fill: #adbddc;
+    }
+  
+.D2 {
+    fill: #adbddc;
+    }
+
+.D3 {
+fill: #adbddc;
+     }
+
+.D4 {
+fill: #adbddc;
+    }
+
+.D5 {
+  fill:#adbddc;
+}
+
+.D6 {
+  fill:#adbddc;
+}
+
+.D7 {
+  fill:#adbddc;
+}
+
+.D4:hover {
+  fill:#fff;
+  transition: 1s;
+}
+
+.bg { 
+  fill: #a2312a;
+}
+
+.bg:hover{ 
+  animation: color 20s ease;
+  animation-iteration-count: 3;
+}
+
+.rightlampinside {
+  fill: #fff;
+}
+
+.leftlampinside {
+  fill: #fff;
+}
+
+.truckbottomblue {
+  fill: #adbddc;
+}
+
+#leftnote { 
+  fill: #fff;
+}
+
+#rightnote { 
+  fill: #fff;
+}
+
+
+.rightnote:hover {
+  fill:#adbddc;
+  transition: 1s ease;
+}
+  
+        
+.leftnote:hover {
+  fill:#adbddc;
+  transition: 1s ease;
+}
+
+.truckbottomblue:hover {
+  cursor: url("http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-icon.png")10 3 , auto;
+}
+
+.truckbottomblue:active {
+  animation: wiggle 1s ease;
+  animation-iteration-count: 3;
+  fill: #fff;
+  transition: 1s;
+  cursor: url("http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-2-icon.png")10 3 , auto;
+}
+
+
+.line {
+  fill: #fff;
+  opacity: 50%;
+}
+
+.line:hover {
+  opacity: 0%;
+  transition: 1s ease;
+}
+
+.lamp2 {
+  fill: #fff;
+}
+
+.lamp2:hover {
+  animation: flash 1s ease;
+  transition: 1s ease;
+  animation-iteration-count: infinite;
+}
+
+.rightlampinside:hover {
+  animation: lampflash 1s ease;
+  transition: 1s ease;
+  animation-iteration-count: infinite;
+}
+
+.leftlampinside:hover {
+  animation: lampflash 1s ease;
+  transition: 1s ease;
+  animation-iteration-count: infinite;
+}
+
+
+#letter9 {
+  fill: #fff;
+}
+
+#wheel1 {
+  fill: #fff;
+}
+
+#wheel2{
+  fill: #fff;
+}
+
+/* Animation */
+@keyframes color {
+  10%  { fill:#2472bb; }
+  20%  { fill:#1e5e9b;}
+  30%  { fill:#184774;  }
+  40%  { fill:#0f2c47; }
+  50% { fill:#000000;   }
+  60% { fill:#0f2c47;   }
+  70% { fill:#184774;   }
+  80% { fill:#1e5e9b;   }
+  90% { fill:#2472bb;   }
+  100% { fill:#a2312a;   }
+}
+
+@keyframes flash {
+  20%  { fill:#fff;
+    transform: translateY(-20px);  }
+  40%  { fill:#a2312a;
+    transform: translateY(-20px);}
+  60%  { fill:#fff;  
+    transform: translateY(-20px);}
+  80%  { fill:#a2312a; 
+    transform: translateY(-20px);}
+  100% { fill:#fff;   }
+}
+
+@keyframes lampflash {
+  20%  { fill:#fff;}
+  40%  { fill:#e3ce74;}
+  60%  { fill:#fff;  ;}
+  80%  { fill:#e3ce74;}
+  100% { fill:#fff;   }
+}
+
+@keyframes wiggle {
+  20%  { transform: translateX(8px);  }
+  40%  { transform: translateX(-4px); }
+  60%  { transform: translateX(4px);  }
+  80%  { transform: translateX(-4px); }
+  100% { transform: translateX(0px);    }
+}
+
+@keyframes wobbleright {
+  16.65% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+.wobbleright {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.wobbleright:hover, .wobbleright:focus, .wobbleright:active {
+  -webkit-animation-name: wobbleright;
+  animation-name: wobbleright;
+  -webkit-animation-duration: 1s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@keyframes wobbleleft {
+  16.65% {
+    -webkit-transform: skew(6deg);
+    transform: skew(6deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+.wobbleleft {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.wobbleleft:hover, .wobbleleft:focus, .wobbleleft:active {
+  -webkit-animation-name: wobbleleft;
+  animation-name: wobbleleft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes drive {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes drive {
+  16.65% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  49.95% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1x);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.drive {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+.drive{
+  -webkit-animation-name: drive;
+  animation-name: drive;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: infinite;
 }
