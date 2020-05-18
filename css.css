@@ -49,33 +49,38 @@ html,body{
    fill: #fff5eb;
  }
 
+.mama1 {
+  fill: #fff;
+}
 
-.D1 {
-    fill: #adbddc;
-    }
-  
-.D2 {
-    fill: #adbddc;
-    }
+.mama1:hover{
+  fill: #adbddc;
+}
 
-.D3 {
-fill: #adbddc;
-     }
+.mama2:hover{
+fill: #e3ce74;
+transition: 1s
+}
 
-.D4 {
-fill: #adbddc;
-    }
+ .hated1 {
+  fill: #e3ce74;
+ }
+ 
+ .hated1:hover {
+  fill:#fff;
+ }
 
-.D5 {
+ .H3:hover {
+  fill:#adbddc;
+  transition: 1s;
+ }
+
+.diesel1 {
   fill:#adbddc;
 }
 
-.D6 {
-  fill:#adbddc;
-}
-
-.D7 {
-  fill:#adbddc;
+.diesel1:hover {
+  fill:#e3ce74;
 }
 
 .D4:hover {
@@ -157,15 +162,16 @@ fill: #adbddc;
   animation-iteration-count: infinite;
 }
 
-.rightlampinside:hover {
-  animation: lampflash 1s ease;
-  transition: 1s ease;
+.leftlampinside {
+  animation: lampflash 2s ;
+  transition: 10s ;
   animation-iteration-count: infinite;
 }
 
-.leftlampinside:hover {
-  animation: lampflash 1s ease;
-  transition: 1s ease;
+
+.rightlampinside {
+  animation: lampflash 2s ;
+  transition: 10s ;
   animation-iteration-count: infinite;
 }
 
@@ -351,4 +357,7 @@ fill: #adbddc;
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: infinite;
+}
+
+.audio { volume: 50%
 }
