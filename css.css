@@ -2,362 +2,793 @@
 CSS Web- Animatie
 ********************************************** */
 
-html,body{
-	margin: 0;
-	padding: 0;
-	background-color: #000;
-  height: 100%;
+/*......BODY CSS......*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #a2312a;
+    height: 100%;
+    cursor: url("http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-icon.png") 10 3, auto;
+}
+html,
+body:active {
+    cursor: url("http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-2-icon.png") 10 3, auto;
 }
 
-*,html,body{
-	box-sizing: border-box;
+*,
+html,
+body {
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #a2312a;
+}
+
+.bg {
+    opacity: 0;
+}
+
+/*......JAVASCRIPT KEYBOARD ACTIONS......*/
+
+/*---------Blauw---------*/
+.blauw {
+    background-color: #adbddc;
+}
+
+.blauw .hated1 {
+    fill: white;
+}
+
+.blauw .diesel1 {
+    fill: white;
+}
+
+.blauw .leftlamp {
+    fill: #fff;
+}
+
+.blauw .rightlamp {
+    fill: #fff;
+}
+
+.blauw .leftlampinside {
+    fill: #adbddc;
+    animation: lampflash1 2s;
+    transition: 10s;
+    animation-iteration-count: infinite;
+}
+
+.blauw .rightlampinside {
+    fill: #adbddc;
+    animation: lampflash1 2s;
+    transition: 10s;
+    animation-iteration-count: infinite;
+}
+
+.blauw .top {
+    fill: #fff;
+}
+
+.blauw .truckbottomblue {
+    fill: #fff;
+}
+
+.blauw .howcanyou {
+    fill: #adbddc;
+}
+
+.blauw .payload {
+    fill: #adbddc;
+}
+
+.blauw .tune {
+    fill: #adbddc;
+}
+
+.blauw .carry {
+    fill: #adbddc;
+}
+
+/*---------Geel---------*/
+.geel {
+    background-color: #e3ce74;
+}
+
+.geel .truckbottomblue {
+    fill: #fff;
+}
+
+.geel .leftblue {
+    fill: #fff;
+}
+
+.geel .rightblue {
+    fill: #fff;
+}
+
+.geel .toprightblue {
+    fill: #e3ce74;
+}
+
+.geel .topleftblue {
+    fill: #e3ce74;
+}
+
+.geel .hated1 {
+    fill: #fff;
+}
+
+.geel .diesel1 {
+    fill: #fff;
+}
+
+.geel .howcanyou {
+    fill: #e3ce74;
+}
+
+.geel .payload {
+    fill: #e3ce74;
+}
+
+.geel .tune {
+    fill: #e3ce74;
+}
+
+.geel .carry {
+    fill: #e3ce74;
+}
+
+/*---------Partymode---------*/
+.party {
+    animation: partymode 4s ease;
+    animation-iteration-count: infinite;
+}
+
+.party .howcanyou {
+    opacity: 0;
+}
+
+.party .payload {
+    opacity: 0;
+}
+
+.party .tune {
+    opacity: 0;
+}
+
+.party .carry {
+    opacity: 0;
+}
+
+.party .diesel1 {
+    opacity: 0;
+}
+
+.party .mama1 {
+    opacity: 0;
+}
+
+.party .hated1 {
+    opacity: 0;
+}
+
+.party .mar19 {
+    opacity: 0;
+}
+
+.party .mar19text {
+    opacity: 0;
+}
+
+.party .through1 {
+    opacity: 0;
+}
+
+.party .may9text {
+    opacity: 0;
+}
+
+.party #letter9 {
+    opacity: 0;
+}
+
+.party .leftlampinside {
+    animation: lampflash1 1s;
+    transition: 10s;
+    animation-iteration-count: infinite;
+}
+
+.party .rightlampinside {
+    animation: lampflash1 1s;
+    transition: 10s;
+    animation-iteration-count: infinite;
+}
+
+.party .rightsmoke1 {
+    animation: smoke 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+
+.party .leftsmoke1 {
+    animation: smoke 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+
+.party .lamp2 {
+    animation: flash 1s ease;
+    transition: 1s ease;
+    animation-iteration-count: infinite;
+}
+
+.party #wheel1 {
+    animation: wiggle 1s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 100s;
+}
+
+.party #wheel2 {
+    animation: wiggle 1s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 100s;
+}
+
+.party #rightnote {
+    animation: wobbleright 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.party #leftnote {
+    animation: wobbleleft 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.party .leftblue {
+    animation: wiggle2 4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.party .rightblue {
+    animation: wiggle2 4s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8ps;
+}
+
+.party .truck {
+    animation: drive 0.8s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/*---------Donker---------*/
+
+.donker {
+    background-color: #000;
+}
+
+.donker .howcanyou {
+    fill: #fff;
+    animation: focus-in-expand 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.5s;
+}
+
+.donker .payload {
+    fill: #e3ce74;
+    animation: focus-in-expand 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 2.5s;
+}
+
+.donker .tune {
+    fill: #adbddc;
+    animation: focus-in-expand 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 3.5s;
+}
+
+.donker .carry {
+    fill: #a2312a;
+    animation: focus-in-expand 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 1.5s;
+}
+
+/*..........ALGEMENE CSS.........*/
+
+/*---------SVG Kleuren---------*/
 
 .cls-1 {
-  fill: #a2312a;
-  }
+    fill: #a2312a;
+}
 
-  .cls-2, .cls-7 {
-	fill: #fafdec;
-  }
+.cls-2,
+.cls-7 {
+    fill: #fafdec;
+}
 
-  .cls-2 {
-	opacity: 0.6;
-  }
+.cls-2 {
+    opacity: 0.6;
+}
 
-  .cls-3 {
-	fill: #e3ce74;
-  }
+.cls-3 {
+    fill: #e3ce74;
+}
 
-  .cls-4 {
-	fill: #adbddc;
-  }
+.cls-4 {
+    fill: #adbddc;
+}
 
-  .cls-5 {
-  fill: #fff;
-  }
-  
-  .cls-6 {
-	fill: #fff5eb;
-  }
+.cls-5 {
+    fill: #fff;
+}
 
-  .rli {
+.cls-6 {
     fill: #fff5eb;
-    }
+}
 
- .lli {
-   fill: #fff5eb;
- }
+/*---------Text Rechtsboven---------*/
 
 .mama1 {
-  fill: #fff;
+    fill: #fff;
 }
 
-.mama1:hover{
-  fill: #adbddc;
+.mama1:hover {
+    fill: #adbddc;
 }
 
-.mama2:hover{
-fill: #e3ce74;
-transition: 1s
+.mama2:hover {
+    fill: #fff;
+    transition: 1s;
 }
 
- .hated1 {
-  fill: #e3ce74;
- }
- 
- .hated1:hover {
-  fill:#fff;
- }
+.hated1 {
+    fill: #e3ce74;
+}
 
- .H3:hover {
-  fill:#adbddc;
-  transition: 1s;
- }
+.hated1:hover {
+    fill: #fff;
+}
+
+.ted1:hover {
+    fill: #adbddc;
+    transition: 1s;
+}
 
 .diesel1 {
-  fill:#adbddc;
+    fill: #adbddc;
 }
 
 .diesel1:hover {
-  fill:#e3ce74;
+    fill: #e3ce74;
 }
 
-.D4:hover {
-  fill:#fff;
-  transition: 1s;
+.D2:hover {
+    fill: #fff;
+    transition: 1s;
 }
 
-.bg { 
-  fill: #a2312a;
+/*---------Text Linksboven---------*/
+
+.mar19 {
+    fill: #fff;
 }
 
-.bg:hover{ 
-  animation: color 20s ease;
-  animation-iteration-count: 3;
+.mar19:hover {
+    fill: #e3ce74;
+    transition: 1s ease;
+}
+
+.mar19text {
+    fill: #fff;
+}
+
+.mar19text:hover {
+    fill: #adbddc;
+    transition: 1s ease;
+}
+
+#letter9 {
+    fill: #fff;
+}
+
+#letter9:hover {
+    fill: #e3ce74;
+    transition: 1s ease;
+}
+
+.may9text {
+    fill: #fff;
+}
+
+.may9text:hover {
+    fill: #adbddc;
+    transition: 1s ease;
+}
+
+/*---------Truck---------*/
+
+.truck {
+    animation: drive 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.topleftblue {
+    fill: #adbddc;
+}
+
+.toprightblue {
+    fill: #adbddc;
+}
+
+.top {
+    fill: #e3ce74;
+}
+
+.leftlamp {
+    fill: #e3ce74;
+}
+
+.rightlamp {
+    fill: #e3ce74;
 }
 
 .rightlampinside {
-  fill: #fff;
+    fill: #fff;
 }
 
 .leftlampinside {
-  fill: #fff;
+    fill: #fff;
 }
 
 .truckbottomblue {
-  fill: #adbddc;
+    fill: #adbddc;
 }
 
-#leftnote { 
-  fill: #fff;
+#leftnote {
+    fill: #fff;
+    animation: drive 1s ease-in-out;
+    animation-iteration-count: infinite;
 }
 
-#rightnote { 
-  fill: #fff;
+#rightnote {
+    fill: #fff;
+    animation: drive 1s ease-in-out;
+    animation-iteration-count: infinite;
 }
 
-
-.rightnote:hover {
-  fill:#adbddc;
-  transition: 1s ease;
-}
-  
-        
-.leftnote:hover {
-  fill:#adbddc;
-  transition: 1s ease;
+#rightnote:hover {
+    fill: #adbddc;
+    transition: 1s ease;
 }
 
-.truckbottomblue:hover {
-  cursor: url("http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-icon.png")10 3 , auto;
-}
-
-.truckbottomblue:active {
-  animation: wiggle 1s ease;
-  animation-iteration-count: 3;
-  fill: #fff;
-  transition: 1s;
-  cursor: url("http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-2-icon.png")10 3 , auto;
-}
-
-
-.line {
-  fill: #fff;
-  opacity: 50%;
-}
-
-.line:hover {
-  opacity: 0%;
-  transition: 1s ease;
+#leftnote:hover {
+    fill: #adbddc;
+    transition: 1s ease;
 }
 
 .lamp2 {
-  fill: #fff;
-}
-
-.lamp2:hover {
-  animation: flash 1s ease;
-  transition: 1s ease;
-  animation-iteration-count: infinite;
+    fill: #fff;
 }
 
 .leftlampinside {
-  animation: lampflash 2s ;
-  transition: 10s ;
-  animation-iteration-count: infinite;
+    animation: lampflash 2s;
+    transition: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
-
 
 .rightlampinside {
-  animation: lampflash 2s ;
-  transition: 10s ;
-  animation-iteration-count: infinite;
+    animation: lampflash 2s;
+    transition: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 
+.leftblue {
+    fill: #adbddc;
+}
 
-#letter9 {
-  fill: #fff;
+.leftblue:hover {
+    fill: #fff;
+    transition: ease 1s;
+}
+
+.rightblue {
+    fill: #adbddc;
+}
+
+.rightblue:hover {
+    fill: #fff;
+    transition: ease 1s;
+}
+
+.rightsmoke1 {
+    fill: #fff;
+}
+
+.rightsmoke1 {
+    animation: smoke 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+.leftsmoke1 {
+    fill: #fff;
+}
+
+.leftsmoke1 {
+    animation: smoke 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
 }
 
 #wheel1 {
-  fill: #fff;
+    fill: #fff;
 }
 
-#wheel2{
-  fill: #fff;
+#wheel2 {
+    fill: #fff;
 }
 
-/* Animation */
-@keyframes color {
-  10%  { fill:#2472bb; }
-  20%  { fill:#1e5e9b;}
-  30%  { fill:#184774;  }
-  40%  { fill:#0f2c47; }
-  50% { fill:#000000;   }
-  60% { fill:#0f2c47;   }
-  70% { fill:#184774;   }
-  80% { fill:#1e5e9b;   }
-  90% { fill:#2472bb;   }
-  100% { fill:#a2312a;   }
+/*---------Onderaan---------*/
+
+.line {
+    fill: #fff;
+    opacity: 50%;
+}
+
+/*---------Text Onderaan---------*/
+
+.carry {
+    fill: #a2312a;
+}
+
+.payload {
+    fill: #a2312a;
+}
+.tune {
+    fill: #a2312a;
+}
+
+.howcanyou {
+    fill: #a2312a;
+}
+
+/*......ANIMATIES......*/
+
+/*---------Keyboard animaties---------*/
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes partymode {
+    10% {
+        background-color: #2e9598;
+    }
+    20% {
+        background-color: #f7db69;
+    }
+    30% {
+        background-color: #f26a44;
+    }
+    40% {
+        background-color: #ec1b4b;
+    }
+    50% {
+        background-color: #a8216b;
+    }
+    60% {
+        background-color: #ec1b4b;
+    }
+    70% {
+        background-color: #f26a44;
+    }
+    80% {
+        background-color: #f7db69;
+    }
+    90% {
+        background-color: #2e9598;
+    }
 }
 
 @keyframes flash {
-  20%  { fill:#fff;
-    transform: translateY(-20px);  }
-  40%  { fill:#a2312a;
-    transform: translateY(-20px);}
-  60%  { fill:#fff;  
-    transform: translateY(-20px);}
-  80%  { fill:#a2312a; 
-    transform: translateY(-20px);}
-  100% { fill:#fff;   }
+    20% {
+        fill: #fff;
+        transform: translateY(-20px);
+    }
+    60% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        fill: #fff;
+    }
 }
 
 @keyframes lampflash {
-  20%  { fill:#fff;}
-  40%  { fill:#e3ce74;}
-  60%  { fill:#fff;  ;}
-  80%  { fill:#e3ce74;}
-  100% { fill:#fff;   }
+    20% {
+        fill: #fff;
+    }
+    40% {
+        fill: #e3ce74;
+    }
+    60% {
+        fill: #fff;
+    }
+    80% {
+        fill: #e3ce74;
+    }
+    100% {
+        fill: #fff;
+    }
 }
 
-@keyframes wiggle {
-  20%  { transform: translateX(8px);  }
-  40%  { transform: translateX(-4px); }
-  60%  { transform: translateX(4px);  }
-  80%  { transform: translateX(-4px); }
-  100% { transform: translateX(0px);    }
+@keyframes lampflash1 {
+    20% {
+        fill: #fff;
+    }
+    40% {
+        fill: #adbddc;
+    }
+    60% {
+        fill: #fff;
+    }
+    80% {
+        fill: #adbddc;
+    }
+    100% {
+        fill: #fff;
+    }
 }
+
+/*---------Wobble---------*/
 
 @keyframes wobbleright {
-  16.65% {
-    -webkit-transform: skew(-6deg);
-    transform: skew(-6deg);
-  }
+    16.65% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
 
-  100% {
-    -webkit-transform: skew(0);
-    transform: skew(0);
-  }
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
 }
 .wobbleright {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-}
-.wobbleright:hover, .wobbleright:focus, .wobbleright:active {
-  -webkit-animation-name: wobbleright;
-  animation-name: wobbleright;
-  -webkit-animation-duration: 1s;
-  animation-duration: 5s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    transform-origin: 0 100%;
 }
 
 @keyframes wobbleleft {
-  16.65% {
-    -webkit-transform: skew(6deg);
-    transform: skew(6deg);
-  }
+    16.65% {
+        -webkit-transform: skew(6deg);
+        transform: skew(6deg);
+    }
 
-  100% {
-    -webkit-transform: skew(0);
-    transform: skew(0);
-  }
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
 }
 .wobbleleft {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-}
-.wobbleleft:hover, .wobbleleft:focus, .wobbleleft:active {
-  -webkit-animation-name: wobbleleft;
-  animation-name: wobbleleft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 5s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    transform-origin: 0 100%;
 }
 
-@-webkit-keyframes drive {
-  16.65% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  33.3% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-  49.95% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  66.6% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+/*---------Idle Animaties---------*/
+
+@keyframes smoke {
+    20% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
 }
+
 @keyframes drive {
-  16.65% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  33.3% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-  49.95% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-  66.6% {
-    -webkit-transform: translateY(-1px);
-    transform: translateY(-1x);
-  }
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-.drive {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-}
-.drive{
-  -webkit-animation-name: drive;
-  animation-name: drive;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: infinite;
+    16.65% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    33.3% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    49.95% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    66.6% {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1x);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
-.audio { volume: 50%
+.drive {
+    animation-name: drive;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+@keyframes wiggle {
+    20% {
+        transform: translateY(8px);
+    }
+    40% {
+        transform: translateY(-4px);
+    }
+    60% {
+        transform: translateY(4px);
+    }
+    80% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(4px);
+    }
+}
+
+@keyframes wiggle2 {
+    20% {
+        transform: translateX(4px);
+    }
+    40% {
+        transform: translateX(-2px);
+    }
+    60% {
+        transform: translateX(2px);
+    }
+    80% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(2px);
+    }
+}
+
+/*......MEDIA......*/
+
+@media only screen and (max-width: 600px) {
+
+
+  .bg {
+    height: 3000px;
+  }
+
+  .line {
+    opacity: 0%;
+  }
+
+  .allsvg {
+    transform: translateY(300px);
+    animation-delay: 1000s;
+  }
+  
+
 }
