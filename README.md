@@ -82,4 +82,4 @@ Als extra heb ik nog een cursor van een Amerikaanse vlag toegevoegd, deze verand
 Dit heb ik gedaan met de cursor property, daarnaast heb ik er ook een op body:active gezet zodat deze verschijnt wanneer je klikt.
 
 <img src="http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-icon.png">
-
+<img src="http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-2-icon.png"">
