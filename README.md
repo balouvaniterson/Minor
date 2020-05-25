@@ -18,7 +18,7 @@ Ik heb gekozen om het kunstwerk in landscape te maken. Ik vond het belangrijk om
 <h2> Poster vertalen naar kunstwerk </h2> 
 Om de poster te vertalen naar het kunstwerk. Ben ik in Adobe Illustrator begonnen met het namaken van de poster. Na dat hij klaar was. Heb ik alle individuele elementen gegroepeerd en deze in verschillende layers geplaatst. Zo worden ze ook automatisch gegroepeerd wanneer je hem in html plakt.
 
-<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+<img src="https://i.ibb.co/qmL5jCm/Screenshot-2020-05-25-at-14-52-57.png">
 
 Nadat ze waren gelayerd, heb ik het bestand als svg geexporteerd en deze in de html geplakt. 
 
@@ -30,7 +30,7 @@ Toen kon er worden begonnen aan de html/css/js.
 
 Om de individuele elementen te stylen. Heb ik de paths van de svg's classes of id's gegeven. Zodat ik deze in de css kon oproepen en hiervan bijvoorbeeld de "fill"(kleur) kon veranderen. 
 
-<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+<img src="https://i.ibb.co/7ydWb5n/Screenshot-2020-05-25-at-15-02-39.png">
 
 Ik heb ook sommige groepen van paths een class gegeven. Zo dat ik de hele groep kon stylen i.p.v. per individueel path.
 
@@ -42,6 +42,8 @@ Om het kunstwerk nog meer tot leven te laten komen heb ik een aantal functies ge
 
 Zo heb ik gebruik gemaakt van hovers op een aantal elementen. Zo heeft de tekst bijvoorbeeld een hover. Wanneer de gebruiker over de tekst hovered veranderd deze van kleur. Dit heb ik gedaan met een fill. Om dit iets uit te breiden heb ik bij de tekst rechtsboven, een soort <i>easter egg</i> toegevoegd. Zo heeft de tekst als groep een hover, en het child hiervan dus bijvoorbeeld 3 letters van het woord ook nog een hover met een ease. Als je dit bij ieder woord rechtsboven doet komen de woorden: <b>I AM TED</b> naar voren. Ted is de trucker.
 
+<img src="https://i.ibb.co/hycMXDv/Screenshot-2020-05-25-at-15-16-20.png">
+
 <h3> Animaties </h3>
 
 Zo heb ik een aantal animaties gebruikt. Sommige van internet en sommige zelf gemaakt. Zo heb ik bijvoorbeeld de auto laten rijden, de rook laten verschijnen, de koplampen laten knipperen, de noten laten bewegen. 
@@ -49,7 +51,7 @@ Dit heb ik gedaan met @keyframes. Zo heb ik door middel van transforms de svg's 
 
 Om de animaties idle meteen te laten beginnen heb ik een class aangemaakt bij een element in de html en deze class name gebruikt voor de keyframes. 
 
-<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+<img src="https://i.ibb.co/6WT6Jkg/Screenshot-2020-05-25-at-15-29-58.png">
 
 Om de animaties iets meer aan te passen heb ik deze nog los neergezet in de css. Waardoor ik ze een duration kon geven. Of ik ik kon stellen hoe vaak die zich achter elkaar moet herhalen. Of om bijvoorbeeld een delay te geven voordat de animatie begint.
 
@@ -58,13 +60,15 @@ Om de animaties iets meer aan te passen heb ik deze nog los neergezet in de css.
 Ik heb gebruik gemaakt van JS om door middel van keyboardtoetsen, elementen te laten veranderen.
 Zo heb ik a.d.h.v. keyframes classes gemaakt. Om vervolgens in JS een functie te schrijven die deze class bovenop een andere class aan een element toe te voegen. Zo kun je bijvoorbeeld de achtergrond kleur veranderen door op een toets te klikken. 
 
+<img src="https://i.ibb.co/DRm0XRD/Screenshot-2020-05-25-at-15-40-31.png">
+
 Eerst heb ik een var aangemaakt van de body.
 Daarna een eventlistener om door middel van een toets een class te togglen.
 Daarna een functie aangemaakt, wanneer je op een specifieke toets klikt, er een class bovenop de andere class wordt geplaatst.
 
 Ik heb 4 verschillende toetsen gebruikt voor 4 verschillende "thema's".
 
-<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+<img src="https://i.ibb.co/MNSXXZ2/Screenshot-2020-05-25-at-15-41-02.png">
 
 De thema's zijn: 
 - Blauw thema (b)
@@ -72,7 +76,7 @@ De thema's zijn:
 - Donkere thema (spatie)
 - Party thema (p)
 
-<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+<img src="https://i.ibb.co/209CbPX/Screenshot-2020-05-25-at-15-42-24.png">
 
 Je kunt ook verschillende thema's over elkaar zetten voor een specialer effect.
 
