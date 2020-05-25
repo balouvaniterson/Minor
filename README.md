@@ -8,3 +8,16 @@ Dit is mijn repository voor web-animatie. In deze repository vind je mijn gedigi
 <p>De poster die ik hebt uitgekozen hoort bij de theatervoorstelling genaamd: <em>Mama hated diesels</em>. Op het eerste deel zie je een truck met muzieknoten en de naam. Op het 2de deel zie je een stuk text namelijk: "How can you carry a payload if you can't carry a tune." Hiermee wil het theaterbedrijf een eerste indruk geven over het verhaal van de voorstelling.</p>
 <p>De stijl van de poster is erg minimalistisch. Ze hebben simpele vormen gebruikt en weinig details toegevoegd. Ook hebben ze maar 3 kleuren gebruikt op de gehele poster. <br /> Omdat de poster uit 2 delen bestaat, heb ik dit ook verwerkt in mijn kunstwerk.</p>
 <p>Hier kun je het kunstwerk nogmaals zien op de website. <br /> <a href="https://designarchives.aiga.org/#/entries/Denver%20Center%20Theatre%20Company/_/detail/relevance/asc/0/7/21027/denver-center-theatre-company-2009-10-season-poster-series/2">Poster</a></p>
+
+<h1> Concept </h1>
+
+Het idee achter mijn kunstwerk is dat ik beide posters wou verwerken in één kunstwerk. Daarnaast heb ik alleen de elementen overgenomen die ik belangrijk vond. Zoals de titel, afbeelding en natuurlijk de kleuren.
+
+Ik heb gekozen om het kunstwerk in landscape te maken. Ik vond het belangrijk om de truck groot te centreren, aangezien ik wou dat dit het middelpunt van mijn kunstwerk werd. Ook had ik al snel het idee om de truck de animeren. Zodat het lijkt alsof hij rijdt.
+
+<h2> Poster vertalen naar kunstwerk </h2> 
+Om de poster te vertalen naar het kunstwerk. Ben ik in Adobe Illustrator begonnen met het namaken van de poster. Na dat hij klaar was. Heb ik alle individuele elementen gegroepeerd en deze in verschillende layers geplaatst. Zo worden ze ook automatisch gegroepeerd wanneer je hem in html plakt.
+
+Nadat ze waren gelayerd, heb ik het bestand als svg geexporteerd en deze in de html geplakt. 
+
+Toen kon er worden begonnen aan de html/css/js.
