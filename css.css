@@ -787,8 +787,6 @@ body {
 
   .allsvg {
     transform: translateY(300px);
-    animation-delay: 1000s;
   }
   
-
-}
+} 

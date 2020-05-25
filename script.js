@@ -1,7 +1,6 @@
 /* Keyboard */
 
 var body = document.querySelector("body");
-console.log(body);
 
 window.addEventListener("keydown", toggle);
 
