@@ -18,6 +18,8 @@ Ik heb gekozen om het kunstwerk in landscape te maken. Ik vond het belangrijk om
 <h2> Poster vertalen naar kunstwerk </h2> 
 Om de poster te vertalen naar het kunstwerk. Ben ik in Adobe Illustrator begonnen met het namaken van de poster. Na dat hij klaar was. Heb ik alle individuele elementen gegroepeerd en deze in verschillende layers geplaatst. Zo worden ze ook automatisch gegroepeerd wanneer je hem in html plakt.
 
+<br>
+
 <img src="https://i.ibb.co/qmL5jCm/Screenshot-2020-05-25-at-14-52-57.png">
 
 Nadat ze waren gelayerd, heb ik het bestand als svg geexporteerd en deze in de html geplakt. 
@@ -79,6 +81,16 @@ De thema's zijn:
 <img src="https://i.ibb.co/209CbPX/Screenshot-2020-05-25-at-15-42-24.png">
 
 Je kunt ook verschillende thema's over elkaar zetten voor een specialer effect.
+
+<h2> Responsive </h2>
+
+Ik heb het kunstwerk responsive gemaakt voor mobiel door middel van:
+meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"
+
+<br>
+
+Daarnaast heb ik in css de afbeelding verplaastst en de achtergrond vergroot.
+<img src="https://i.imgur.com/yt3xAJa.png">
 
 <h2> Extra </h2>
 
