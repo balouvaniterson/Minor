@@ -13,11 +13,73 @@ Dit is mijn repository voor web-animatie. In deze repository vind je mijn gedigi
 
 Het idee achter mijn kunstwerk is dat ik beide posters wou verwerken in één kunstwerk. Daarnaast heb ik alleen de elementen overgenomen die ik belangrijk vond. Zoals de titel, afbeelding en natuurlijk de kleuren.
 
-Ik heb gekozen om het kunstwerk in landscape te maken. Ik vond het belangrijk om de truck groot te centreren, aangezien ik wou dat dit het middelpunt van mijn kunstwerk werd. Ook had ik al snel het idee om de truck de animeren. Zodat het lijkt alsof hij rijdt.
+Ik heb gekozen om het kunstwerk in landscape te maken. Ik vond het belangrijk om de truck groot te centreren, aangezien ik wou dat dit het middelpunt van mijn kunstwerk werd. Ook had ik al snel het idee om de truck de animeren. Zodat het lijkt alsof hij rijdt en het kunstwerk echt tot leven komt.
 
 <h2> Poster vertalen naar kunstwerk </h2> 
 Om de poster te vertalen naar het kunstwerk. Ben ik in Adobe Illustrator begonnen met het namaken van de poster. Na dat hij klaar was. Heb ik alle individuele elementen gegroepeerd en deze in verschillende layers geplaatst. Zo worden ze ook automatisch gegroepeerd wanneer je hem in html plakt.
 
+<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+
 Nadat ze waren gelayerd, heb ik het bestand als svg geexporteerd en deze in de html geplakt. 
 
 Toen kon er worden begonnen aan de html/css/js.
+
+<h1>HTML/CSS</h1>
+
+<h2> SVG </h2>
+
+Om de individuele elementen te stylen. Heb ik de paths van de svg's classes of id's gegeven. Zodat ik deze in de css kon oproepen en hiervan bijvoorbeeld de "fill"(kleur) kon veranderen. 
+
+<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+
+Ik heb ook sommige groepen van paths een class gegeven. Zo dat ik de hele groep kon stylen i.p.v. per individueel path.
+
+<h2> Interactie </h2>
+
+Om het kunstwerk nog meer tot leven te laten komen heb ik een aantal functies gebruikt om hem interactief te maken.
+
+<h3> Hover </h3>
+
+Zo heb ik gebruik gemaakt van hovers op een aantal elementen. Zo heeft de tekst bijvoorbeeld een hover. Wanneer de gebruiker over de tekst hovered veranderd deze van kleur. Dit heb ik gedaan met een fill. Om dit iets uit te breiden heb ik bij de tekst rechtsboven, een soort <i>easter egg</i> toegevoegd. Zo heeft de tekst als groep een hover, en het child hiervan dus bijvoorbeeld 3 letters van het woord ook nog een hover met een ease. Als je dit bij ieder woord rechtsboven doet komen de woorden: <b>I AM TED</b> naar voren. Ted is de trucker.
+
+<h3> Animaties </h3>
+
+Zo heb ik een aantal animaties gebruikt. Sommige van internet en sommige zelf gemaakt. Zo heb ik bijvoorbeeld de auto laten rijden, de rook laten verschijnen, de koplampen laten knipperen, de noten laten bewegen. 
+Dit heb ik gedaan met @keyframes. Zo heb ik door middel van transforms de svg's laten kunnen verplaatsen en bewegen, fill's om de kleuren te laten veranderen en opactity om elementen te laten verdwijnen.
+
+Om de animaties idle meteen te laten beginnen heb ik een class aangemaakt bij een element in de html en deze class name gebruikt voor de keyframes. 
+
+<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+
+Om de animaties iets meer aan te passen heb ik deze nog los neergezet in de css. Waardoor ik ze een duration kon geven. Of ik ik kon stellen hoe vaak die zich achter elkaar moet herhalen. Of om bijvoorbeeld een delay te geven voordat de animatie begint.
+
+<h2> Javascript </h2>
+
+Ik heb gebruik gemaakt van JS om door middel van keyboardtoetsen, elementen te laten veranderen.
+Zo heb ik a.d.h.v. keyframes classes gemaakt. Om vervolgens in JS een functie te schrijven die deze class bovenop een andere class aan een element toe te voegen. Zo kun je bijvoorbeeld de achtergrond kleur veranderen door op een toets te klikken. 
+
+Eerst heb ik een var aangemaakt van de body.
+Daarna een eventlistener om door middel van een toets een class te togglen.
+Daarna een functie aangemaakt, wanneer je op een specifieke toets klikt, er een class bovenop de andere class wordt geplaatst.
+
+Ik heb 4 verschillende toetsen gebruikt voor 4 verschillende "thema's".
+
+<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+
+De thema's zijn: 
+- Blauw thema (b)
+- Geel thema (g)
+- Donkere thema (spatie)
+- Party thema (p)
+
+<img src="https://designarchives.aiga.org/assets/images/000/100/717/100717_lg.jpg">
+
+Je kunt ook verschillende thema's over elkaar zetten voor een specialer effect.
+
+<h2> Extra </h2>
+
+Als extra heb ik nog een cursor van een Amerikaanse vlag toegevoegd, deze veranderd wanneer je klikt.
+Dit heb ik gedaan met de cursor property, daarnaast heb ik er ook een op body:active gezet zodat deze verschijnt wanneer je klikt.
+
+<img src="http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-icon.png">
+
