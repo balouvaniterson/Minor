@@ -99,3 +99,8 @@ Dit heb ik gedaan met de cursor property, daarnaast heb ik er ook een op body:ac
 
 <img src="http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-icon.png">
 <img src="http://icons.iconarchive.com/icons/iconfactory/copland-6/32/American-Flag-2-icon.png"">
+
+<h2> Bronnen </h2>
+
+- https://css-tricks.com/almanac/
+- https://animista.net/
